@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 页面</title>
+    <!-- 用的远程的CDN加速  -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--字体样式-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.6.3/css/font-awesome.css">
+    <!--进度条样式-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/nprogress/0.2.0/nprogress.css">
+
+    <!--自定义的样式-->
+    <link rel="stylesheet" href="../build/css/custom.min.css">
+
+    <link rel="stylesheet" href="../build/css/switchery/switchery.min.css">
+
+
+</head>
+<body class="nav-md">
+<div class="container body">
+    <div class="main_container">
+        <div class="col-md-3 left_col">
+            <div class="left_col scroll-view">
+                <div class="navbar nav_title" style="border: 0;">
+                    <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>泰山资源管理系统</span></a>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <!-- menu profile quick info -->
+                <div class="profile clearfix">
+                    <div class="profile_info">
+                        <span>Welcome,</span>
+                        <h2>zhouzhenjiang3</h2>
+                    </div>
+                </div>
+                <!-- /menu profile quick info -->
+                <br />
+
+                <!-- sidebar menu -->
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                    <div class="menu_section">
+
+                        <ul class="nav side-menu">
+                            <li><a><i class="fa fa-home"></i> 用户群 <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="index.html">创建用户群</a></li>
+                                    <li><a href="index2.html">管理用户群</a></li>
+                                </ul>
+                            </li>
+                            <li><a><i class="fa fa-edit"></i> 资源位管理 <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="form.html">资源位一</a></li>
+                                    <li><a href="form.html">资源位一</a></li>
+                                    <li><a href="form.html">资源位一</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <!-- /sidebar menu -->
+            </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu">
+                <nav>
+                    <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="">
+                            <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <img src="images/img.jpg" alt="">John Doe
+                                <span class=" fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                <li><a href="javascript:;"> Profile</a></li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span class="badge bg-red pull-right">50%</span>
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+                                <li><a href="javascript:;">Help</a></li>
+                                <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- 主体部分 -->
+        <div class="right_col" role="main">
+            <div class="">
+                <div class="page-title">
+                    <div class="title_left">
+                        <h3>资源位导航</h3>
+                    </div>
+
+                    <div class="title_right">
+                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="input-group-btn">
+                              <button class="btn btn-default" type="button">Go!</button>
+                          </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="row">
+
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2>资源位管理</h2>
+                                <ul class="nav navbar-right panel_toolbox">
+                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    </li>
+                                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+
+
+                                <!-- Smart Wizard -->
+                                <div id="wizard" class="form_wizard wizard_horizontal">
+                                    <ul class="wizard_steps">
+                                        <li>
+                                            <a href="#step-1">
+                                                <span class="step_no">1</span>
+                                                <span class="step_descr">
+                                              第一步<br />
+                                              <small>用户群创建</small>
+                                          </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#step-2">
+                                                <span class="step_no">2</span>
+                                                <span class="step_descr">
+                                              第二步<br />
+                                              <small>资源位设置</small>
+                                          </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#step-3">
+                                                <span class="step_no">3</span>
+                                                <span class="step_descr">
+                                              第三步<br />
+                                              <small>用户群体和资源位关联</small>
+                                          </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div id="step-1">
+                                        <form class="form-horizontal form-label-left">
+
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">用户群名称<span class="required">*</span>
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                </div>
+                                                <button class="btn btn-primary">添加</button>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12">定义用户群规则
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <select class="select2_single form-control" tabindex="-1">
+                                                        <option>是否实名</option>
+                                                        <option>金融APP新用户</option>
+                                                        <option>是否用过闪付</option>
+                                                        <option>支付次数</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                    <div id="step-2">
+                                        <h2 class="StepTitle">创建营销策略</h2>
+                                        <!-- 资源位的管理 -->
+                                        <form class="form-horizontal form-label-left">
+
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="market-name">营销策略名称<span class="required">*</span>
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="text" id="market-name" placeholder="请输入营销策略名称" required="required" class="form-control col-md-7 col-xs-12">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12">营销渠道<span class="required">*</span>
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <select class="select2_single form-control" tabindex="-1">
+                                                        <option>短信渠道</option>
+                                                        <option>支付成功页</option>
+                                                        <option>闪付成功页</option>
+                                                        <option>push 消息</option>
+                                                        <option>签到模版</option>
+                                                        <option>薅羊毛模板</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="market-text">文案内容</label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="text" id="market-text" placeholder="请输入文案内容" class="form-control col-md-7 col-xs-12">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="market-shortlink">内容短链接</label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="text" id="market-shortlink" placeholder="请输入内容短链接" class="form-control col-md-7 col-xs-12">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="market-longLink">内容长链接</label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="text" id="market-longLink" placeholder="请输入内容短链接" class="form-control col-md-7 col-xs-12">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="market-imglink">内容图片链接</label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <div class="input-group">
+                                                        <input type="text" id="market-imglink" placeholder="内容图片链接" class="form-control col-md-7 col-xs-12">
+                                                        <span class="input-group-btn">
+                                                            <button class="btn btn-default" type="button">预览</button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12">模版<span class="required">*</span>
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <select class="select2_single form-control" tabindex="-1">
+                                                        <option>模板一</option>
+                                                        <option>模板二</option>
+                                                        <option>模板三</option>
+                                                        <option>模板四</option>
+                                                        <option>模板五</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="market-note">备注</label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="text" id="market-note" placeholder="请输入备注" class="form-control col-md-7 col-xs-12">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" >策略实施时间</label>
+                                                <div class="">
+                                                    <label>
+                                                        <input type="checkbox" class="js-switch" checked /> 立即生效
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" class="js-switch" /> 定时时间
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="step-3">
+                                        <h2 class="StepTitle">Step 3 Content</h2>
+                                        完成关联关系的关联
+                                    </div>
+
+                                </div>
+                                <!-- End SmartWizard Content -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+            <div class="pull-right">
+                Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--引用的是第三方的插件-->
+    <!-- FastClick -->
+    <script src="../build/js/fastclick/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../build/js/nprocess/nprogress.js"></script>
+    <!-- jQuery Smart Wizard -->
+    <script src="../build/js/jquery-wizard/jquery.smartWizard.js"></script>
+    <script src="../build/js/switchery/switchery.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+</div>
+</body>
+</html>
